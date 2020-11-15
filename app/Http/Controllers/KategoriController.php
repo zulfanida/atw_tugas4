@@ -20,7 +20,6 @@ class KategoriController extends Controller {
 		$kategori->deskripsi = request ('deskripsi');
 		$kategori->save();
 
-
 		return redirect('kategori')->with('success', 'Data Berhasil Ditambahkan');
 	}
 	function show(Kategori $kategori){

@@ -29,6 +29,7 @@
 											<a href="{{url('kategori', $kategori->id)}}/edit" class="btn btn-warning"><i class="fa fa-edit"></i></a>
 											@include('template.utils.delete', ['url' => url('kategori', $kategori->id)])
 										</div>
+										
 									</td>
 									<td>{{$kategori->nama}}</td>
 									<td>{{$kategori->harga}}</td>

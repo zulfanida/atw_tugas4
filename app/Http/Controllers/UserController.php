@@ -19,8 +19,7 @@ class UserController extends Controller {
 		$user->password = bcrypt(request ('password'));
 		$user->save();
 
-
-		return redirect('user')->with('success', 'Data Berhasil Ditambahkan');
+		return redirect('user')->with('success', 'Data Berhasil Ditambah');
 	}
 	function show(User $user){
 		$data['user'] = $user;

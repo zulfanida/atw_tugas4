@@ -15,7 +15,6 @@
 							<label for="" class="control-label">Nama</label>
 							<input type="text" class="form-control" name="nama">
 						</div>
-						
 						<button class="btn btn-dark float-right"><i class="fa fa-save"></i> Simpan</button>
 
 						</form>

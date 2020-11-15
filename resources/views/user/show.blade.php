@@ -12,7 +12,6 @@
 						<h3>{{$user->username}}</h3>
 						<hr>
 						<p>
-					
 							Email : {{$user->email}} |
 							Nama : {{$user->nama}} gr
 						</p>

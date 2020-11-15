@@ -24,5 +24,4 @@ class HomeClientController extends Controller{
 		return view('Login2');
 	}
 
-
 }

@@ -40,6 +40,7 @@
 							<label for="" class="control-label">Deskripsi</label>
 							<textarea name="deskripsi" class="form-control">{{$produk->deskripsi}}</textarea>
 						</div>
+						
 						<button class="btn btn-dark float-right"><i class="fa fa-save"></i> Simpan</button>
 
 						</form>

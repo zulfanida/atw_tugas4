@@ -20,7 +20,6 @@ class ProdukController extends Controller {
 		$produk->deskripsi = request ('deskripsi');
 		$produk->save();
 
-
 		return redirect('produk')->with('success', 'Data Berhasil Ditambahkan');
 	}
 	function show(Produk $produk){
