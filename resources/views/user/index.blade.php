@@ -1,4 +1,4 @@
-@extends('template.base')
+@extends('template.admin')
 
 @section('content')
 
@@ -42,6 +42,5 @@
 			</div>
 		</div>
 	</div>
-
 
 @endsection

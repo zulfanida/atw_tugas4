@@ -9,13 +9,12 @@
 						Detail Data User
 					</div>
 					<div class="card-body">
-						<h3>{{$user->username}}</h3>
+						<h3>{{$user->nama}}</h3>
 						<hr>
 						<p>
+							{{"@".$user->username}} |
 							Email : {{$user->email}} |
-							Nama : {{$user->nama}} gr
 						</p>
-						
 					</div>
 				</div>
 			</div>

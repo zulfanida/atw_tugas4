@@ -51,7 +51,14 @@
             <!-- MAIN CONTENT-->
 
                                           
-        @yield('content')  
+        @yield('content')
+                <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    @include('template.utils.notif')
+                </div>
+            </div>    
+        </div>  
         <!-- END MAIN CONTENT-->       
                                         
                          

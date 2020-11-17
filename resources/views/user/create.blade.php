@@ -35,7 +35,6 @@
 								</div>
 							</div>
 						</div>
-		
 						<button class="btn btn-dark float-right"><i class="fa fa-save"></i> Simpan</button>
 
 						</form>
@@ -44,5 +43,4 @@
 			</div>
 		</div>
 	</div>
-	
 @endsection

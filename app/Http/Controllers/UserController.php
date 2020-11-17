@@ -16,7 +16,7 @@ class UserController extends Controller {
 		$user->username = request ('username');
 		$user->email = request ('email');
 		$user->nama = request ('nama');
-		$user->password = bcrypt(request ('password'));
+		$user->password = bcrypt(request('password'));
 		$user->save();
 
 		return redirect('user')->with('success', 'Data Berhasil Ditambah');
@@ -33,7 +33,7 @@ class UserController extends Controller {
 		$user->username = request ('username');
 		$user->email = request ('email');
 		$user->nama = request ('nama');
-		$user->password = request ('password');
+		if(request('password')) $user->password = bcrypt(request('password'));
 		$user->save();
 
 

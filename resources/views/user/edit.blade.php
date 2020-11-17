@@ -6,12 +6,12 @@
 			<div class="col-md-12 mt-5">
 				<div class="card">
 					<div class="card-header">
-						Tambah Data User
+						Edit Data User
 					</div>
 					<div class="card-body">
 						<form action="{{url('user', $user->id)}}" method="post">
 							@csrf
-							@method("PUT")
+							@method("put")
 						<div class="form-group">
 							<label for="" class="control-label">Username</label>
 							<input type="text" class="form-control" name="username" value="{{$user->username}}">
@@ -32,7 +32,7 @@
 							<div class="col-md-3">
 								<div class="form-group">
 									<label for="" class="control-label">Password</label>
-									<input type="text" class="form-control" name="password" value="{{$user->password}}">
+									<input type="text" class="form-control" name="password">
 								</div>
 							</div>
 						</div>

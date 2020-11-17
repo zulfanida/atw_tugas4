@@ -43,11 +43,13 @@
                     <div class="login-content">
                         <div class="login-logo">
                             <a href="#">
-                                <img src="images/icon/logo.png" alt="CoolAdmin">
+                                <img src="images/icon/logo.png" alt="Zulfanida">
                             </a>
                         </div>
                         <div class="login-form">
-                            <form action="" method="post">
+                            @include('template.utils.notif')
+                            <form action="{{url('login')}}" method="post">
+                                @csrf
                                 <div class="form-group">
                                     <label>Email Address</label>
                                     <input class="au-input au-input--full" type="email" name="email" placeholder="Email">
@@ -58,14 +60,15 @@
                                 </div>
                                 <div class="login-checkbox">
                                     <label>
-                                        <input type="checkbox" name="remember">Remember Me
+                                        <input type="checkbox" name="remember">
+                                        Remember Me
                                     </label>
                                     <label>
                                         <a href="#">Forgotten Password?</a>
                                     </label>
                                 </div>
                                 <label>
-                                        <a id="submit-btn" href="{{url('beranda2')}}" class="btn btn-primary btn-user btn-block" value="LOGIN">Login</a>
+                                        <a id="submit-btn" href="{{url('beranda')}}" class="btn btn-primary btn-user btn-block" value="LOGIN">Login</a>
                                     </label>
                             </form>
                             <div class="register-link">

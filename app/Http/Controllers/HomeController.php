@@ -17,4 +17,14 @@ class HomeController extends Controller{
 		return view('kategori');
 	}
 
+	function test($produk, $hargaMin = 0, $hargaMax = 0 ){
+ 		if($produk == 'sepatu'){
+ 			echo "Tampilkan Produk Sepatu";
+ 		}elseif($produk == 'kaos'){
+ 			echo "Produk kaos";
+ 		}
+ 		echo "<br>";
+ 		echo "Harga Min adalah $hargaMin <br>";
+ 		echo "Harga Max adalah $hargaMax <br>";
+	}
 }

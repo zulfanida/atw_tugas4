@@ -1,8 +1,10 @@
 <aside class="menu-sidebar d-none d-lg-block">
             <div class="logo">
-                <a href="#">
-                    <img src="images/icon/logo.png" alt="Zulfanida" />
-                </a>
+            <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+            </div>
+            <div class="info"> 
+            </div>
+                <a href="#" class="d-block">Zulfanida</a>
             </div>
             <div class="menu-sidebar__content js-scrollbar1">
                 <nav class="navbar-sidebar">
