@@ -45,11 +45,12 @@ Route::get('/kategori', [HomeController::class, 'showKategori']);
 Route::get('test/{produk}/{hargaMin?}/{hargaMax?}', [HomeController::class, 'test']);
 
 Route::prefix('admin')->middleware('auth')->group(function(){
+	Route::post('produk/filter', [ProdukController::class, 'filter']);
 	Route::resource('produk', ProdukController::class);
 	Route::resource('kategori', KategoriController::class);
-	Route::resource('user', UserController::class);
-});
 
-Route::get('/login', [AuthController::class, 'showLogin'])->('login');
+});
+	Route::resource('user', UserController::class);
+Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
 Route::post('/login', [AuthController::class, 'loginProcess']);
 Route::get('/logout', [AuthController::class, 'logout']);

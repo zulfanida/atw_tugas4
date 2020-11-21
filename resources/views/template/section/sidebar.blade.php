@@ -32,7 +32,7 @@
                                 <i class="fas fa-chart-bar"></i>Beranda</a>
                         </li>
                         <li>
-                            <a href="{{url('produk')}}">
+                            <a href="{{url('admin/produk')}}">
                                 <i class="fas fa-table"></i>Produk</a>
                         </li>
                         <li>
