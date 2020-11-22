@@ -20,7 +20,7 @@
 							<div class="col-md-6">
 								<div class="form-group">
 									<label for="" class="control-label">Email</label>
-									<input type="text" class="form-control" name="email" value="{{$user->email}}">
+									<input type="email" class="form-control" name="email" value="{{$user->email}}">
 								</div>
 							</div>
 							<div class="col-md-3">
@@ -32,7 +32,13 @@
 							<div class="col-md-3">
 								<div class="form-group">
 									<label for="" class="control-label">Password</label>
-									<input type="text" class="form-control" name="password">
+									<input type="password" class="form-control" name="password">
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="form-group">
+									<label for="" class="control-label">No HP</label>
+									<input type="text" class="form-control" name="no_handphone">
 								</div>
 							</div>
 						</div>
